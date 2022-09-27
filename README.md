@@ -8,4 +8,4 @@
 다음으로 등광도 분석 후 실제와 분석된 등광도선의 불일치가 심할 경우, 등광도 옵션 조정에서 step은 1에서 0.5로, 1픽셀당 초는 0.396″에서 0.198″로 낮추고 nclip은 10~30, fflage은 0.3 정도 추가하며, 회귀분석에서는 랜덤포레스트의 초매개변수의 n_estimator은 1,000, min_samples은 5, max_depth은 4, bootstrap은 True로 합니다. 그 후 다시 다림질에서 표준편차를 1.5~2로 조정하는 작업을 시행하여, 매끈하고 덜 복잡하며 원형 혹은 타원형이 분명한 외부고리 은하를 만듭니다. 
 최종적으로 분석이 완료되면 결과 도출에 사용할 필터로 실제와 분석된 등광도선이 최대한 유사하고 외부고리 은하 판별 3요소의 값의 변동 구간이 최소인 필터를 선택합니다.
 
-[image](https://user-images.githubusercontent.com/113698152/192454330-ef3ed52d-4927-4951-a17a-fd7adee027a6.png)
+![image](https://user-images.githubusercontent.com/113698152/192454330-ef3ed52d-4927-4951-a17a-fd7adee027a6.png)
