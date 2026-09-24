@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+astropy
+regions
+photutils
+scikit-learn
+jupyter
+jupyter_contrib_nbextensions
