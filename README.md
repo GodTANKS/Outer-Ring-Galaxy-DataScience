@@ -8,6 +8,23 @@ SDSS의 실제 외부고리 은하 FITS 영상을 Python으로 처리·분석하
 > **주의:** FITS 파일이 많아 저장소 전체 용량이 큽니다.
 
 ---
+## ▶ 가장 쉬운 실행: Google Colab 간편판
+
+**[Google Colab에서 바로 실행하기](https://colab.research.google.com/github/GodTANKS/Outer-Ring-Galaxy-DataScience/blob/main/colab/%EC%99%B8%EB%B6%80%EA%B3%A0%EB%A6%AC%20%EC%9D%80%ED%95%98%20%EC%98%81%EC%83%81%EB%B6%84%EC%84%9D_Colab_%EA%B0%84%ED%8E%B8%ED%8C%90.ipynb)**
+
+Python/Jupyter 설치나 `C:\\ring_galaxy` 폴더 생성 없이 실행할 수 있습니다.
+
+1. 위 Colab 링크를 엽니다.
+2. 첫 셀부터 순서대로 실행합니다.
+3. 분석할 은하 번호를 선택합니다. 처음에는 **1010**을 권장합니다.
+4. 필요한 `ring_galaxy.csv`와 해당 은하의 `u/g/r/i/z` FITS 5개는 GitHub에서 자동 다운로드됩니다.
+5. i-band 참고 영상을 보고 장축 반경·단축 반경·위치각을 입력합니다.
+6. 분석이 끝나면 결과 CSV/JPG를 ZIP으로 내려받을 수 있습니다.
+
+> 원본 연구용 Jupyter Notebook은 그대로 보존하며, Colab 간편판은 실행 편의성을 높인 교육용 버전입니다.
+
+---
+
 
 ## 🚀 처음 사용하는 분을 위한 빠른 시작
 
