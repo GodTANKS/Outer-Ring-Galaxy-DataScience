@@ -86,7 +86,7 @@ Notebook 안에도 필요한 패키지 설치 코드가 포함되어 있습니�
 기존 공식 연구자료실:  
 https://sites.google.com/view/astronomydatascience/
 
-통합 연구·교육 플랫폼:  
+통합 연구·교육 플랫폼 *(GitHub Pages 구축 예정)*:  
 https://GodTANKS.github.io/astronomy-data-science/
 
 ## 사용 안내
