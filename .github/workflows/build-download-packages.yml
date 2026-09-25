@@ -1,4 +1,5 @@
 name: Build download packages
+# Regenerate ZIPs when notebook wording changes.
 
 on:
   push:
