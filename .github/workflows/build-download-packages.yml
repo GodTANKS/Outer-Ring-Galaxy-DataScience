@@ -22,8 +22,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout only files needed for download packages
         uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            coding/
+            colab/
+            downloads/
+            ring_galaxy.csv
+            requirements.txt
+            1010_u.fits
+            1010_g.fits
+            1010_r.fits
+            1010_i.fits
+            1010_z.fits
+          sparse-checkout-cone-mode: false
 
       - name: Build ZIP packages
         run: |
