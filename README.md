@@ -8,9 +8,9 @@ SDSS의 실제 외부고리 은하 FITS 영상을 Python으로 처리·분석하
 > **주의:** FITS 파일이 많아 저장소 전체 용량이 큽니다.
 
 ---
-## ▶ 가장 쉬운 실행: Google Colab 간편판
+## ▶ 가장 쉬운 실행: Google Colab 원본 반영판
 
-**[Google Colab에서 바로 실행하기](https://colab.research.google.com/github/GodTANKS/Outer-Ring-Galaxy-DataScience/blob/main/colab/%EC%99%B8%EB%B6%80%EA%B3%A0%EB%A6%AC%20%EC%9D%80%ED%95%98%20%EC%98%81%EC%83%81%EB%B6%84%EC%84%9D_Colab_%EA%B0%84%ED%8E%B8%ED%8C%90.ipynb)**
+**[🚀 Google Colab 원본 반영판 바로 실행](https://colab.research.google.com/github/GodTANKS/Outer-Ring-Galaxy-DataScience/blob/main/colab/%EC%99%B8%EB%B6%80%EA%B3%A0%EB%A6%AC%20%EC%9D%80%ED%95%98%20%EC%98%81%EC%83%81%EB%B6%84%EC%84%9D_Colab_%EC%9B%90%EB%B3%B8%EB%B0%98%EC%98%81%ED%8C%90.ipynb)**
 
 Python/Jupyter 설치나 `C:\\ring_galaxy` 폴더 생성 없이 실행할 수 있습니다.
 
@@ -25,11 +25,26 @@ Python/Jupyter 설치나 `C:\\ring_galaxy` 폴더 생성 없이 실행할 수 �
 
 > Colab에서는 `%matplotlib widget`을 사용하지 않습니다. 브라우저의 실제 클릭 좌표를 JavaScript로 받아 Python 좌표로 변환하는 방식이라 별도 interactive Matplotlib backend가 필요하지 않습니다.
 
-> 원본 연구용 Jupyter Notebook은 그대로 보존하며, Colab 간편판은 실행 편의성을 높인 교육용 버전입니다.
+> **Colab 원본 반영판은 축약판이 아닙니다.** 원본 연구용 Jupyter Notebook의 분석 단계와 핵심 코드를 유지하고, 로컬 파일 경로·입력 방식·이미지 클릭 상호작용만 Colab 환경에 맞게 바꾸었습니다.
+>
+> 실제 저장소 기준으로 원본은 **97셀(코드 48셀)**, Colab 원본 반영판은 **100셀(코드 49셀)**이며, 배경 하늘 제거 → smoothing → 타원 기하학 → 등광도 분석 → 타원율·위치각 → Random Forest 보완 분석의 흐름을 유지합니다.
 
 ---
 
 
+
+## 📥 코드·파일 직접 받기
+
+실행하지 않고 **원본 코드 파일 자체를 내려받아 보관하거나 수정**하려면 아래 링크를 사용하세요.
+
+- **[📓 원본 Jupyter Notebook 받기](https://github.com/GodTANKS/Outer-Ring-Galaxy-DataScience/raw/refs/heads/main/coding/%EC%99%B8%EB%B6%80%EA%B3%A0%EB%A6%AC%20%EC%9D%80%ED%95%98%20%EB%B6%84%EB%A5%98_%EB%B6%84%EC%84%9D%20%EC%BD%94%EB%93%9C.ipynb)** — 연구용 원본 `.ipynb`
+- **[☁️ Colab 원본 반영판 Notebook 받기](https://github.com/GodTANKS/Outer-Ring-Galaxy-DataScience/raw/refs/heads/main/colab/%EC%99%B8%EB%B6%80%EA%B3%A0%EB%A6%AC%20%EC%9D%80%ED%95%98%20%EC%98%81%EC%83%81%EB%B6%84%EC%84%9D_Colab_%EC%9B%90%EB%B3%B8%EB%B0%98%EC%98%81%ED%8C%90.ipynb)** — Colab 호환 `.ipynb`
+- **[🐍 click2label.py 받기](https://github.com/GodTANKS/Outer-Ring-Galaxy-DataScience/raw/refs/heads/main/coding/click2label.py)** — 원본 Notebook 보조 코드
+- **[📦 저장소 전체 ZIP 받기](https://github.com/GodTANKS/Outer-Ring-Galaxy-DataScience/archive/refs/heads/main.zip)** — Notebook·보조 코드·CSV·SDSS FITS 포함
+
+> 원본 Jupyter 방식은 로컬 Python/Jupyter 환경에서 실행하며, Colab 원본 반영판은 브라우저에서 바로 실행할 수 있습니다.
+
+---
 
 ## 🚀 처음 사용하는 분을 위한 빠른 시작
 
@@ -98,7 +113,8 @@ C:\ring_galaxy\result
 
 | 파일/폴더 | 설명 |
 |---|---|
-| `coding/외부고리 은하 분류_분석 코드.ipynb` | 메인 분석 Notebook |
+| `coding/외부고리 은하 분류_분석 코드.ipynb` | 연구용 원본 Jupyter Notebook |
+| `colab/외부고리 은하 영상분석_Colab_원본반영판.ipynb` | 원본 분석 흐름을 유지한 Google Colab 호환 Notebook |
 | `coding/click2label.py` | Notebook 보조 Python 파일 |
 | `ring_galaxy.csv` | 분석 대상 은하 목록 |
 | `*_u.fits` | SDSS u-band 영상 |
