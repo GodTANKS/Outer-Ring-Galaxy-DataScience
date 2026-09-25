@@ -1,0 +1,40 @@
+name: Build download packages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'coding/**'
+      - 'colab/**'
+      - 'ring_galaxy.csv'
+      - 'requirements.txt'
+      - '.github/workflows/build-download-packages.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build ZIP packages
+        run: |
+          mkdir -p downloads
+          rm -f downloads/outer-ring-colab.zip downloads/outer-ring-jupyter.zip
+          zip -j -q downloads/outer-ring-colab.zip             "colab/외부고리 은하 영상분석_Colab_원본반영판.ipynb"             "ring_galaxy.csv"             "requirements.txt"
+          zip -j -q downloads/outer-ring-jupyter.zip             "coding/외부고리 은하 분류_분석 코드.ipynb"             "coding/click2label.py"             "ring_galaxy.csv"             "requirements.txt"
+
+      - name: Commit packages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add downloads/*.zip
+          if git diff --cached --quiet; then
+            echo "No package changes"
+          else
+            git commit -m "Update downloadable notebook packages [skip ci]"
+            git push
+          fi
