@@ -141,9 +141,10 @@ A. 먼저 `python -m pip install --upgrade pip`를 실행한 뒤 다시 `pip ins
 
 ## 📄 관련 연구
 
-**조훈 · 손정주, 「외부고리 은하 영상 분석을 위한 파이썬 기반 알고리즘 개발」**  
-한국지구과학회지, 43(5), 579–590, 2022.  
-DOI: https://doi.org/10.5467/JKESS.2022.43.5.579
+논문 PDF는 코드 저장소에 중복 보관하지 않고 **통합 논문 모음**에서 관리합니다.
+
+**[📚 통합 논문 모음에서 보기](https://GodTANKS.github.io/astronomy-data-science/papers/)**
+
 
 ---
 
