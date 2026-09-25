@@ -11,6 +11,10 @@ on:
       - 'requirements.txt'
       - '.github/workflows/build-download-packages.yml'
 
+concurrency:
+  group: build-download-packages
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
@@ -37,5 +41,6 @@ jobs:
             echo "No package changes"
           else
             git commit -m "Update downloadable notebook packages [skip ci]"
-            git push
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi
