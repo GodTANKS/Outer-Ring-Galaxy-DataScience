@@ -34,7 +34,7 @@ Python/Jupyter 설치나 `C:\\ring_galaxy` 폴더 생성 없이 실행할 수 �
 ## 📥 실습 파일 다운로드
 
 - **[📥 Colab용 파일 다운로드](https://raw.githubusercontent.com/GodTANKS/Outer-Ring-Galaxy-DataScience/main/downloads/outer-ring-colab.zip)** — Colab Notebook + 분석 목록 CSV
-- **[📓 Jupyter Notebook용 파일 다운로드](https://raw.githubusercontent.com/GodTANKS/Outer-Ring-Galaxy-DataScience/main/downloads/outer-ring-jupyter.zip)** — Jupyter Notebook + `click2label.py` + 분석 목록 CSV
+- **[📓 Jupyter Notebook용 파일 다운로드](https://raw.githubusercontent.com/GodTANKS/Outer-Ring-Galaxy-DataScience/main/downloads/outer-ring-jupyter.zip)** — Jupyter Notebook + `click2label.py` + 분석 목록 CSV + 예제 1010 은하 FITS 5개
 - **[📦 전체 코드·데이터 ZIP 다운로드](https://github.com/GodTANKS/Outer-Ring-Galaxy-DataScience/archive/refs/heads/main.zip)** — 전체 SDSS FITS 포함
 
 **실행 형식**
